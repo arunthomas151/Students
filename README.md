@@ -2,7 +2,11 @@
 
 - clone  repository
 - go to project directry on terminal
-- composer autoload
+- composer install or update
+  ```php
+  composer install
+  ```
+  Or
   ```php
   composer update
   ```
