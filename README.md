@@ -1,15 +1,27 @@
 ## Project configuration
 
-- clone  repo
+- clone  repository
 - go to project directry on terminal
 - composer autoload
   ```php
-  $ composer update
+    composer update
   ```
 - create .env from .env.example
-- php artisan key:generate
+- genarate aplication key
+ ```php
+    php artisan key:generate
+  ```
 - create a database with name students
 - config db credentials
-- php artisan migrate
-- php artisan db:seed
-- php artisan serve
+- migrate table using the below command
+  ```php
+    php artisan migrate
+  ```
+- put datas using to tables
+  ```php
+    php artisan db:seed
+  ```
+-run the application
+  ```php
+    php artisan serve
+  ```

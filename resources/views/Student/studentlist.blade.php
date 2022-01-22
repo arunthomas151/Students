@@ -117,7 +117,7 @@
         formData.append("_token", '{{csrf_token()}}');
         $.ajax({
             type: "post",
-            url: "{{ route('studentmark_update') }}",
+            url: "{{ route('student_update') }}",
             data: formData,
             dataType: 'JSON',
             contentType: false,
