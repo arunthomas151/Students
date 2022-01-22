@@ -25,7 +25,7 @@
   ```php
   php artisan db:seed
   ```
--run the application
+- run the application
   ```php
   php artisan serve
   ```
