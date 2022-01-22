@@ -29,3 +29,6 @@
   ```php
   php artisan serve
   ```
+- the aplication successfully configured try to login using the below credetials
+- username : admin@gmail.com
+- password : Admin@1234
