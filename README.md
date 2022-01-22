@@ -6,6 +6,7 @@
   $ composer update
   ```
 - create .env from .env.example
+- php artisan key:generate
 - create a database with name students
 - config db credentials
 - php artisan migrate
