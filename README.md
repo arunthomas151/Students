@@ -1,6 +1,7 @@
 ## Project configuration
 
 - clone  repo
+- go to project directry on terminal
 - composer autoload
   ```php
   $ composer update
