@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use DB;
 use Auth;
 use App\Models\Reportingteacher;
 use App\Models\Student;
@@ -90,6 +91,7 @@ class StudentController extends Controller
 
     public function student_delete(Request $request){
         if(Student::find($request->student_id)->delete()){
+            DB::table('mark_list')->where('student_id',$request->student_id)->delete();
             return response()->json(['message' => 'Student Deleted Successfully', 'status' => 201]);
         }else{
             return response()->json(['message' => 'Someting Went Wrong', 'status' => 202]);
